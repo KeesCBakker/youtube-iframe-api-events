@@ -28,7 +28,8 @@
   }
 
   function waitForReadyStateComplete() {
-    if (document.readyState === "complete") {
+
+    if (document.readyState === "complete" || document.readyState === "interactive") {
       parseframes();
     } else {
       document.addEventListener('DOMContentLoaded', parseframes);
