@@ -1,10 +1,10 @@
 (function() {
 
   //don't load twice
-  if (typeof window['parseYouTubeFrame'] === 'function')
+  if (typeof window['youtube-iframe-api-events'] === 'function')
     return;
 
-  window['parseYouTubeFrame'] = parseYouTubeFrame;
+  window['youtube-iframe-api-events'] = parseYouTubeFrame;
 
   //check if YT API is loaded
   if (typeof window['YT'] === 'undefined')
